@@ -24,6 +24,26 @@ include_once ("mimses.php");
 - For ease of use a global variable is assigned to UUID, it's called ` $tok`
 - checking for the NONCE and session checks are very easy, if these checks pass, a global var named `$isTokenOk` will be `true`, otherwise `false`, that's it!
 
+>###Example:
+- put the test.php and mimses.php files on your server and open the test.php URL file in your browser
+- copy the following javascript function and run it through your browser console (F12)
+ - ```javascript
+$.ajax({// Here we use JQuery but it works with or without it
+type: 'POST',
+url:'test.php',
+data: {
+tok: tok, // here you send the token with other data you wanna send
+some: "other data"
+},
+success: function(res, status, xhr) {
+tok = res; // here server just answer with token but if you have (and sure you do) more complex answer you should parse it and assign the token variable to a var to use it in your next request
+console.log("new recieved tiken is: " + res);
+},
+error: function(xhr, status, err) {
+console.log('ERR! ' + err)
+}
+});
+```
 
 I'll try to update this document and provide use cases but let me know if you need them so I'll add priorities,
 Please let me know if you see a bug or think something is wrong, I'm still learning! :)
