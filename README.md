@@ -27,7 +27,7 @@ include_once ("mimses.php");
 >###Example:
 - put the test.php and mimses.php files on your server and open the test.php URL file in your browser
 - copy the following javascript function and run it through your browser console (F12)
- - ```javascript
+```javascript
 $.ajax({// Here we use JQuery but it works with or without it
 type: 'POST',
 url:'test.php',
