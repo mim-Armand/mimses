@@ -44,6 +44,20 @@ console.log('ERR! ' + err)
 }
 });
 ```
+> #### Next:
+- [ ] prepare more examples
+  - [x] simple AJAX examples
+  - [ ] more production ready AJAX
+  - [ ] some php samples
+- [ ] add parameters
+  - [ ] cookie parameters
+  - [ ] global security variables (like the strength of UUID)
+  - [ ] add more encryption options like BCRYPT for paranoidic reasons! :ghost:
+- [ ] add some security improvments like:
+  - [ ] frequency of request alerts
+  - [ ] IP change alerts
+  - [ ] time limit alerts
+
 
 I'll try to update this document and provide use cases but let me know if you need them so I'll add priorities,
 Please let me know if you see a bug or think something is wrong, I'm still learning! :)
