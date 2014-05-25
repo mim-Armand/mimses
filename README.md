@@ -50,11 +50,11 @@ console.log('ERR! ' + err)
   - [ ] more production ready AJAX
   - [ ] some php samples
 - [ ] add parameters
-  - [ ] cookie parameters
-  - [ ] global security variables (like the strength of UUID)
+  - [x] cookie parameters
+  - [x] global security variables (like the strength of UUID)
   - [ ] add more encryption options like BCRYPT for paranoidic reasons! :ghost:
 - [ ] add some security improvments like:
-  - [ ] frequency of request alerts
+  - [x] frequency of request alerts
   - [ ] IP change alerts
   - [ ] time limit alerts
 
