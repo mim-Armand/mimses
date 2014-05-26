@@ -24,7 +24,7 @@ setcookie("can_set_cookies", "1");
 // if lastTok exist, set it to current CSRFToken (before changing it), otherwise set to empty
 isset($_SESSION['lastTok']) ? $_SESSION['lastTok'] = $_SESSION['CSRFToken'] : $_SESSION['lastTok'] = '';
 
-//$lastTok --> number, previous CSRF Token number (to check in case of page refresh if neccessary)
+//$lastTok --> number, previous CSRF Token number (to check in case of page refresh if neccessary) --> please note it is the LAST token used (including in AJAX calls)
 $lastTok = $_SESSION['lastTok'];
 
 // Regenerate CSRFToken
